@@ -192,11 +192,11 @@ public:
   // Required for boost integration, e. g. BOOST_TEST
   using value_type = std::string;
 
-#if JSON_USE_NULLREF
-  // Binary compatibility kludges, do not use.
-  static const Value& null;
-  static const Value& nullRef;
-#endif
+//#if JSON_USE_NULLREF
+//  // Binary compatibility kludges, do not use.
+//  static const Value& null;
+//  static const Value& nullRef;
+//#endif
 
   // null and nullRef are deprecated, use this instead.
   static Value const& nullSingleton();
